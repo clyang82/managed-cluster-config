@@ -363,7 +363,7 @@ metadata:
     name: binding-rbac-permissions-operator-config-sp
     namespace: openshift-acm-policies
 placementRef:
-    apiGroup: apps.open-cluster-management.io
+    apiGroup: cluster.open-cluster-management.io
     kind: Placement
     name: placement-rbac-permissions-operator-config-sp
 subjects:

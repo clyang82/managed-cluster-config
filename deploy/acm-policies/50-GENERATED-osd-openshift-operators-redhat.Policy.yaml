@@ -111,7 +111,7 @@ metadata:
     name: binding-osd-openshift-operators-redhat
     namespace: openshift-acm-policies
 placementRef:
-    apiGroup: apps.open-cluster-management.io
+    apiGroup: cluster.open-cluster-management.io
     kind: Placement
     name: placement-osd-openshift-operators-redhat
 subjects:

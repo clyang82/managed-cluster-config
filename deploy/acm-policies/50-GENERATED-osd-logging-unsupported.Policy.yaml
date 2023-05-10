@@ -199,7 +199,7 @@ metadata:
     name: binding-osd-logging-unsupported
     namespace: openshift-acm-policies
 placementRef:
-    apiGroup: apps.open-cluster-management.io
+    apiGroup: cluster.open-cluster-management.io
     kind: Placement
     name: placement-osd-logging-unsupported
 subjects:

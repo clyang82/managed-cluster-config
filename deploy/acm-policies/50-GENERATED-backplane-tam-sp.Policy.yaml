@@ -93,7 +93,7 @@ metadata:
     name: binding-backplane-tam-sp
     namespace: openshift-acm-policies
 placementRef:
-    apiGroup: apps.open-cluster-management.io
+    apiGroup: cluster.open-cluster-management.io
     kind: Placement
     name: placement-backplane-tam-sp
 subjects:

@@ -642,7 +642,7 @@ metadata:
     name: binding-osd-customer-monitoring
     namespace: openshift-acm-policies
 placementRef:
-    apiGroup: apps.open-cluster-management.io
+    apiGroup: cluster.open-cluster-management.io
     kind: Placement
     name: placement-osd-customer-monitoring
 subjects:

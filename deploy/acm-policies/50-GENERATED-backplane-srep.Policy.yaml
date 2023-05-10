@@ -424,7 +424,7 @@ metadata:
     name: binding-backplane-srep
     namespace: openshift-acm-policies
 placementRef:
-    apiGroup: apps.open-cluster-management.io
+    apiGroup: cluster.open-cluster-management.io
     kind: Placement
     name: placement-backplane-srep
 subjects:

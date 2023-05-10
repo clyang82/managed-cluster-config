@@ -55,7 +55,7 @@ metadata:
     name: binding-osd-cluster-admin
     namespace: openshift-acm-policies
 placementRef:
-    apiGroup: apps.open-cluster-management.io
+    apiGroup: cluster.open-cluster-management.io
     kind: Placement
     name: placement-osd-cluster-admin
 subjects:
