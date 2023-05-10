@@ -51,7 +51,7 @@ spec:
                 remediationAction: enforce
                 severity: low
 ---
-apiVersion: cluster.open-cluster-management.io/v1beta2
+apiVersion: cluster.open-cluster-management.io/v1beta1
 kind: Placement
 metadata:
     name: placement-hs-mgmt-route-monitor-operator
