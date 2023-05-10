@@ -144,18 +144,14 @@ spec:
                 remediationAction: enforce
                 severity: low
 ---
-apiVersion: apps.open-cluster-management.io/v1
-kind: PlacementRule
+apiVersion: cluster.open-cluster-management.io/v1beta2
+kind: Placement
 metadata:
     name: placement-backplane-srep-sp
     namespace: openshift-acm-policies
 spec:
-    clusterSelector:
-        matchExpressions:
-            - key: hypershift.open-cluster-management.io/hosted-cluster
-              operator: In
-              values:
-                - "true"
+    clusterSets:
+    - global
 ---
 apiVersion: policy.open-cluster-management.io/v1
 kind: PlacementBinding
@@ -164,7 +160,7 @@ metadata:
     namespace: openshift-acm-policies
 placementRef:
     apiGroup: apps.open-cluster-management.io
-    kind: PlacementRule
+    kind: Placement
     name: placement-backplane-srep-sp
 subjects:
     - apiGroup: policy.open-cluster-management.io
